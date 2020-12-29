@@ -14,9 +14,11 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -25,16 +27,39 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: BizPage - v3.2.0
-  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .swiper-container {
+      width: 18rem;
+      height: 18rem;
+
+
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-weight: 700;
+
+    }
+
+    h4{
+      font-weight:700;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -45,26 +70,17 @@
 
       <div class="row justify-content-center">
         <div class="col-xl-11 d-flex align-items-center">
-          <h1 class="logo mr-auto"><a href="index.html">BizPage</a></h1>
+          <h1 class="logo mr-auto"><a href="index.html">TAKE IT EC</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li class="active"><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#team">Team</a></li>
-              <li class="drop-down"><a href="">Drop Down</a>
-                <ul>
-                  <li><a href="#">Drop Down 1</a></li>
-                  <li><a href="#">Drop Down 3</a></li>
-                  <li><a href="#">Drop Down 4</a></li>
-                  <li><a href="#">Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#about">ABOUT US</a></li>
+              <li class="active"><a href="#portfolio">LIBRARY</a></li>
+              <li><a href="#team">TEAM</a></li>
+              <li><a href="#contact">CONTACT US</a></li>
 
             </ul>
           </nav><!-- .nav-menu -->
@@ -74,56 +90,213 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main">
+  <main id="main mt-5 pt-5 mb-5" style=''>
 
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Details</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li>Portfolio Details</li>
-          </ol>
-        </div>
+    <div class="container-fluid mt-5 pt-5 mb-5" style='text-align:center;position:relative;'>
 
-      </div>
-    </section><!-- Breadcrumbs Section -->
+      <div class="row  mx-auto mt-5 ">
+        <div class="col-md-5 mx-auto">
+          <div class="swiper-container mx-auto" style=''>
+            <div class="swiper-wrapper mx-auto">
+              <div class="swiper-slide">
+                <div class=" col-md-12 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
+                        class="link-preview"><i class="ion ion-eye"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
+                          class="ion ion-android-open"></i></a>
+                    </figure>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section class="portfolio-details">
-      <div class="container">
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">SEMESTER 1</a></h4>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class=" col-md-12 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
+                        class="link-preview"><i class="ion ion-eye"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
+                          class="ion ion-android-open"></i></a>
+                    </figure>
 
-        <div class="portfolio-details-container">
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">SEMESTER 2</a></h4>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
 
-          <div class="owl-carousel portfolio-details-carousel">
-            <img src="assets/img/portfolio/portfolio-details-1.jpg" class="img-fluid" alt="">
-            <img src="assets/img/portfolio/portfolio-details-2.jpg" class="img-fluid" alt="">
-            <img src="assets/img/portfolio/portfolio-details-3.jpg" class="img-fluid" alt="">
+                <div class=" col-md-12 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
+                        class="link-preview"><i class="ion ion-eye"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
+                          class="ion ion-android-open"></i></a>
+                    </figure>
+
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">SEMESTER 3</a></h4>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image:url(./images/nature-4.jpg)">
+
+
+
+                <div class=" col-md-12 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
+                        class="link-preview"><i class="ion ion-eye"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
+                          class="ion ion-android-open"></i></a>
+                    </figure>
+
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">SEMESTER 4</a></h4>
+                  
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+              </div>
+              <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)">
+              
+              
+              
+              
+
+                <div class=" col-md-12 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
+                        class="link-preview"><i class="ion ion-eye"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
+                          class="ion ion-android-open"></i></a>
+                    </figure>
+
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">SEMESTER 5</a></h4>
+                  
+                    </div>
+                  </div>
+                </div>
+              
+              
+              
+              
+              
+              
+              </div>
+              <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)">
+              
+              
+              
+
+                <div class=" col-md-12 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
+                        class="link-preview"><i class="ion ion-eye"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
+                          class="ion ion-android-open"></i></a>
+                    </figure>
+
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">SEMESTER 6</a></h4>
+                  
+                    </div>
+                  </div>
+                </div>
+              
+              
+              
+              
+              
+              
+              </div>
+              <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)">
+              
+              
+              
+
+                <div class=" col-md-12 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
+                        class="link-preview"><i class="ion ion-eye"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
+                          class="ion ion-android-open"></i></a>
+                    </figure>
+
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">SEMESTER 7</a></h4>
+                  
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)">
+              
+              
+              
+
+                <div class=" col-md-12 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
+                        class="link-preview"><i class="ion ion-eye"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
+                          class="ion ion-android-open"></i></a>
+                    </figure>
+
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">SEMESTER 8</a></h4>
+                  
+                    </div>
+                  </div>
+                </div>
+              
+              
+              
+              
+              
+              </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination" style='background:black; color:white;'></div> -->
           </div>
-
-          <div class="portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Web design</li>
-              <li><strong>Client</strong>: ASU Company</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="portfolio-description">
-          <h2>This is an example of portfolio detail</h2>
-          <p>
-            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-          </p>
         </div>
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </div>
+
+
 
   </main><!-- End #main -->
 
@@ -133,23 +306,24 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>BizPage</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>TAKE IT EC</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
+              darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo.
+              Amet volutpat consequat mauris nunc congue.</p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Library</a></li>
+
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
               A108 Adam Street <br>
@@ -169,13 +343,7 @@
 
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
+
 
         </div>
       </div>
@@ -183,25 +351,19 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
-      -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; Copyright <strong>takeitec</strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
+
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
 
   <!-- Vendor JS Files -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -215,6 +377,23 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 
 </body>
 
