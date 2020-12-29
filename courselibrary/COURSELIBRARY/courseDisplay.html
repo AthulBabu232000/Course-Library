@@ -2,398 +2,855 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - BizPage Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>Course Display</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-    rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+        rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <style>
-    .swiper-container {
-      width: 18rem;
-      height: 18rem;
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 
-    }
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      font-weight: 700;
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
 
-    }
+        body {
+            background: #eee;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
 
-    h4{
-      font-weight:700;
-    }
-  </style>
+        .swiper-slide {
+            height: 300px;
+            background: #882525;
+            line-height: 300px;
+            text-align: center;
+        }
+
+        img:hover {
+
+
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            transform: translate(50%, -50%) scale(2);
+            z-index: 5;
+            border-color: transparent;
+
+        }
+
+        .arrow {
+            height: 4vmin;
+            width: 8vmin;
+            background: #9D00FF;
+            clip-path: polygon(0 34%, 63% 32%, 46% 1%, 100% 50%, 48% 100%, 63% 71%, 0 70%);
+            position: absolute;
+            bottom: -4vmin;
+            right: 4vmin;
+        }
+
+        .btn:active {
+            opacity: 0.5;
+            transform: scale(0.99);
+            border: 2px solid #eee;
+        }
+    </style>
 
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container-fluid">
-
-      <div class="row justify-content-center">
-        <div class="col-xl-11 d-flex align-items-center">
-          <h1 class="logo mr-auto"><a href="index.html">TAKE IT EC</a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-          <nav class="nav-menu d-none d-lg-block">
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="#about">ABOUT US</a></li>
-              <li class="active"><a href="#portfolio">LIBRARY</a></li>
-              <li><a href="#team">TEAM</a></li>
-              <li><a href="#contact">CONTACT US</a></li>
-
-            </ul>
-          </nav><!-- .nav-menu -->
-        </div>
-      </div>
-
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main mt-5 pt-5 mb-5" style=''>
 
 
-    <div class="container-fluid mt-5 pt-5 mb-5" style='text-align:center;position:relative;'>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container-fluid">
 
-      <div class="row  mx-auto mt-5 ">
-        <div class="col-md-5 mx-auto">
-          <div class="swiper-container mx-auto" style=''>
-            <div class="swiper-wrapper mx-auto">
-              <div class="swiper-slide">
-                <div class=" col-md-12 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <figure>
-                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
-                        class="link-preview"><i class="ion ion-eye"></i></a>
-                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
-                          class="ion ion-android-open"></i></a>
-                    </figure>
+            <div class="row justify-content-center">
+                <div class="col-xl-11 d-flex align-items-center">
+                    <h1 class="logo mr-auto"><a href="index.html">TAKE IT EC</a></h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-                    <div class="portfolio-info">
-                      <h4><a href="portfolio-details.html">SEMESTER 1</a></h4>
-                     
-                    </div>
-                  </div>
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="#about">ABOUT US</a></li>
+                            <li class="active"><a href="#portfolio">LIBRARY</a></li>
+                            <li><a href="#team">TEAM</a></li>
+                            <li><a href="#contact">CONTACT US</a></li>
+
+                        </ul>
+                    </nav><!-- .nav-menu -->
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class=" col-md-12 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <figure>
-                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
-                        class="link-preview"><i class="ion ion-eye"></i></a>
-                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
-                          class="ion ion-android-open"></i></a>
-                    </figure>
-
-                    <div class="portfolio-info">
-                      <h4><a href="portfolio-details.html">SEMESTER 2</a></h4>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-
-                <div class=" col-md-12 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <figure>
-                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
-                        class="link-preview"><i class="ion ion-eye"></i></a>
-                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
-                          class="ion ion-android-open"></i></a>
-                    </figure>
-
-                    <div class="portfolio-info">
-                      <h4><a href="portfolio-details.html">SEMESTER 3</a></h4>
-                    
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide" style="background-image:url(./images/nature-4.jpg)">
-
-
-
-                <div class=" col-md-12 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <figure>
-                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
-                        class="link-preview"><i class="ion ion-eye"></i></a>
-                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
-                          class="ion ion-android-open"></i></a>
-                    </figure>
-
-                    <div class="portfolio-info">
-                      <h4><a href="portfolio-details.html">SEMESTER 4</a></h4>
-                  
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-
-              </div>
-              <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)">
-              
-              
-              
-              
-
-                <div class=" col-md-12 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <figure>
-                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
-                        class="link-preview"><i class="ion ion-eye"></i></a>
-                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
-                          class="ion ion-android-open"></i></a>
-                    </figure>
-
-                    <div class="portfolio-info">
-                      <h4><a href="portfolio-details.html">SEMESTER 5</a></h4>
-                  
-                    </div>
-                  </div>
-                </div>
-              
-              
-              
-              
-              
-              
-              </div>
-              <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)">
-              
-              
-              
-
-                <div class=" col-md-12 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <figure>
-                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
-                        class="link-preview"><i class="ion ion-eye"></i></a>
-                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
-                          class="ion ion-android-open"></i></a>
-                    </figure>
-
-                    <div class="portfolio-info">
-                      <h4><a href="portfolio-details.html">SEMESTER 6</a></h4>
-                  
-                    </div>
-                  </div>
-                </div>
-              
-              
-              
-              
-              
-              
-              </div>
-              <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)">
-              
-              
-              
-
-                <div class=" col-md-12 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <figure>
-                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
-                        class="link-preview"><i class="ion ion-eye"></i></a>
-                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
-                          class="ion ion-android-open"></i></a>
-                    </figure>
-
-                    <div class="portfolio-info">
-                      <h4><a href="portfolio-details.html">SEMESTER 7</a></h4>
-                  
-                    </div>
-                  </div>
-                </div>
-              
-              </div>
-              <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)">
-              
-              
-              
-
-                <div class=" col-md-12 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <figure>
-                      <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                      <a href="assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1"
-                        class="link-preview"><i class="ion ion-eye"></i></a>
-                      <a href="portfolio-details.html" class="link-details" title="More Details"><i
-                          class="ion ion-android-open"></i></a>
-                    </figure>
-
-                    <div class="portfolio-info">
-                      <h4><a href="portfolio-details.html">SEMESTER 8</a></h4>
-                  
-                    </div>
-                  </div>
-                </div>
-              
-              
-              
-              
-              
-              </div>
-
-            </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination" style='background:black; color:white;'></div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 footer-info">
-            <h3>TAKE IT EC</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
-              darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo.
-              Amet volutpat consequat mauris nunc congue.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Library</a></li>
-
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
 
-          </div>
-
-
-
         </div>
-      </div>
-    </div>
+    </header><!-- End Header -->
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>takeitec</strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+    <main id="main mt-5 pt-5 mb-5">
 
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
+        <div class="container-fluid mt-5 pt-5 mb-5" style='text-align:center;position:relative;'>
 
-  <!-- Vendor JS Files -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+            <div class="row  mx-auto mt-5 ">
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'cube',
-      grabCursor: true,
-      cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
 
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  </script>
+
+                <div class="swiper-container" id="swiper-container2" style="width:800px;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide active-slider" style='background-color:#111;'>
+
+                            <div class="row p-2 mx-auto">
+                                <div class="col-5 mx-auto">
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>SOLID STATE
+                                            DEVICES</button>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
+                                            SYLLABUS</button>
+                                    </div>
+
+
+                                    <div class="row mt-4">
+                                        <img class='img-responsive rounded img-fluid mx-auto'
+                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
+                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5 mx-auto text-center">
+                                    <div class="row mt-4">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            1</button>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            2</button>
+
+
+
+                                    </div>
+                                    <div class="row">
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            3</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            4</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            5</button>
+
+
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class='arrow'>
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide" style='background-color:#111;'>
+                            <div class="row p-2 mx-auto">
+                                <div class="col-5 mx-auto">
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>LOGIC CIRCUIT
+                                            DESIGN</button>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
+                                            SYLLABUS</button>
+                                    </div>
+
+
+                                    <div class="row mt-4">
+                                        <img class='img-responsive rounded img-fluid mx-auto'
+                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
+                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5 mx-auto text-center">
+                                    <div class="row mt-4">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            1</button>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            2</button>
+
+
+
+                                    </div>
+                                    <div class="row">
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            3</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            4</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            5</button>
+
+
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class='arrow'>
+
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-slide" style='background-color:#111;'>
+
+                            <div class="row p-2 mx-auto">
+                                <div class="col-5 mx-auto">
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>NETWORK THEORY
+                                        </button>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
+                                            SYLLABUS</button>
+                                    </div>
+
+
+                                    <div class="row mt-4">
+                                        <img class='img-responsive rounded img-fluid mx-auto'
+                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
+                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5 mx-auto text-center">
+                                    <div class="row mt-4">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            1</button>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            2</button>
+
+
+
+                                    </div>
+                                    <div class="row">
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            3</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            4</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            5</button>
+
+
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class='arrow'>
+
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide" style='background-color:#111;'>
+
+
+                            <div class="row p-2 mx-auto">
+                                <div class="col-5 mx-auto">
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>MATHEMATICS
+                                        </button>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
+                                            SYLLABUS</button>
+                                    </div>
+
+
+                                    <div class="row mt-4">
+                                        <img class='img-responsive rounded img-fluid mx-auto'
+                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
+                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5 mx-auto text-center">
+                                    <div class="row mt-4">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            1</button>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            2</button>
+
+
+
+                                    </div>
+                                    <div class="row">
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            3</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            4</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            5</button>
+
+
+                                    </div>
+
+
+
+                                    <div class="row">
+                                        <div class='arrow'>
+
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-slide" style='background-color:#111;'>
+
+                            <div class="row p-2 mx-auto">
+                                <div class="col-5 mx-auto">
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>PROFESSIONAL ETHICS
+                                        </button>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
+                                            SYLLABUS</button>
+                                    </div>
+
+
+                                    <div class="row mt-4">
+                                        <img class='img-responsive rounded img-fluid mx-auto'
+                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
+                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5 mx-auto text-center">
+                                    <div class="row mt-4">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            1</button>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            2</button>
+
+
+
+                                    </div>
+                                    <div class="row">
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            3</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            4</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            5</button>
+
+
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class='arrow'>
+
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="swiper-slide" style='background-color:#111;'>
+
+
+                            <div class="row p-2 mx-auto">
+                                <div class="col-5 mx-auto">
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>
+                                            SUSTAINABLE ENGINEERING
+                                        </button>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
+                                            SYLLABUS</button>
+                                    </div>
+
+
+                                    <div class="row mt-4">
+                                        <img class='img-responsive rounded img-fluid mx-auto'
+                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
+                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5 mx-auto text-center">
+                                    <div class="row mt-4">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            1</button>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            2</button>
+
+
+
+                                    </div>
+                                    <div class="row">
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            3</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            4</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            5</button>
+
+
+                                    </div>
+
+
+
+                                    <div class="row">
+                                        <div class='arrow'>
+
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-slide" style='background-color:#111;'>
+
+                            <div class="row p-2 mx-auto">
+                                <div class="col-5 mx-auto">
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>
+                                            COMPUTER SCIENCE
+                                        </button>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <button class='mx-auto btn p-0 '
+                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
+                                            SYLLABUS</button>
+                                    </div>
+
+
+                                    <div class="row mt-4">
+                                        <img class='img-responsive rounded img-fluid mx-auto'
+                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
+                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5 mx-auto text-center">
+                                    <div class="row mt-4">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            1</button>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            2</button>
+
+
+
+                                    </div>
+                                    <div class="row">
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            3</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            4</button>
+
+
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <button class='btn w-100 rounded mb-1'
+                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
+                                            5</button>
+
+
+                                    </div>
+
+
+
+                                    <div class="row">
+                                        <div class='arrow'>
+
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </main><!-- End #main -->
+
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <h3>TAKE IT EC</h3>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
+                            valies
+                            darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
+                            fermentum leo.
+                            Amet volutpat consequat mauris nunc congue.</p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Library</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            A108 Adam Street <br>
+                            New York, NY 535022<br>
+                            United States <br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>takeitec</strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- Vendor JS Files -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+
+
+
+        var mySwiper2 = new Swiper('#swiper-container2', {
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true,
+            slidesPerView: 1
+
+        })
+    </script>
 
 </body>
 
