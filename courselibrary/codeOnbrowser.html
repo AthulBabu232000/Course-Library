@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=sunburst"></script>
+
+    <title>code on browser</title>
+</head>
+
+<body>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+      Launch
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <div class="modal-header">
+                            <h5 class="modal-title">Write a program to print the first 'N' Fibonacci numbers</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        
+    <!-- <pre class="prettyprint">
+
+    def fibo(n):
+        a = 0
+        b = 1
+        res = a + b
+        for i in range(n):
+            print(a)
+            res = a + b
+            a = b
+            b = res
+        return None
+    if __name__ == '__main__':
+        n = int(input())
+        fibo(n)
+
+
+    </pre> -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="done"></div>
+<button class = 'btn btn-info' onclick = "change(this)"data-toggle="modal" data-target="#modelId"> launch 2</button>
+    
+    <!-- <script>
+        $('#exampleModal').on('show.bs.modal', event => {
+            var button = $(event.relatedTarget);
+            var modal = $(this);
+            // Use above variables to manipulate the DOM
+            
+        });
+    </script> -->
+
+    <script>
+    //     function change(mod){
+    //     //     mod.innerHTML = 'hello world';
+    //     // }
+    //     $('#exampleModal').on('show.bs.modal', event => {
+    //         var button = $(event.relatedTarget);
+    //         var modal = $(this);
+    //         // Use above variables to manipulate the DOM
+    //         changer(modal);
+    //     });
+
+    //     function changer(m){
+    //         m.getElementBy('prettyprint')[0].innerHTML = 'hello world';
+
+    //     }
+    // }
+    </script>
+
+        
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=sunburst">
+        
+
+        var change = (buttons) =>{
+            const modal = document.getElementById('modelId')
+            const modalContent = modal.querySelector('.modal-content');
+            const modalBody = modalContent.querySelector('.modal-body');
+            const containerFluid = modalBody.querySelector('.container-fluid');
+            containerFluid.innerHTML = `
+            <pre class = 'prettyprint'>    
+                 import numpy 
+                 for i in range(n):
+                     print(i)
+                
+                
+                
+                </pre>
+            `
+        
+
+        }
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
