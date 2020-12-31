@@ -42,17 +42,37 @@
         }
 
         body {
-            background: #eee;
+            background: #111111;
+
             color: #000;
             margin: 0;
             padding: 0;
         }
 
         .swiper-slide {
-            height: 300px;
-            
-            line-height: 300px;
-            text-align: center;
+
+            height: 100vh;
+            background: #111111;
+
+
+        }
+
+        h5 {
+            color: white;
+            font-weight: 700;
+        }
+
+        .card {
+            border-radius: 21px;
+            background: #111111;
+            box-shadow: 5px 5px 10px #090909,
+                -5px -5px 10px #191919;
+        }
+
+        .card:hover {
+            box-shadow: none;
+            border: 2px solid #9D00FF;
+            transform: scale(0.98)
         }
 
         img:hover {
@@ -126,397 +146,81 @@
 
 
 
-                <div class="swiper-container" id="swiper-container2" style="width:800px;">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide active-slider" style='background-color:#111;'>
+                <div class="swiper-container" id="swiper-container2" style="">
+                    <div class="swiper-wrapper" style='height:100vh;'>
+                        <div class="swiper-slide ">
 
                             <div class="row p-2 mx-auto">
-                                <div class="col-5 mx-auto">
-
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>SOLID STATE
-                                            DEVICES</button>
-                                    </div>
-
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
-                                            SYLLABUS</button>
-                                    </div>
-
-
-                                    <div class="row mt-4">
-                                        <img class='img-responsive rounded img-fluid mx-auto'
-                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
-                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-5 mx-auto text-center">
-                                    <div class="row mt-4">
-
-                                        <button class='btn w-100 rounded mb-1' onclick = "location.href = 'ssdModule1.html'"
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            1</button>
-
-                                    </div>
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            2</button>
+                                <div class="col-12 mx-auto">
 
 
 
-                                    </div>
-                                    <div class="row">
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            3</button>
+                                    <div class="row mx-auto text-center">
 
-
+                                        <h5 class='mx-auto mb-3'>SOLID STATE DEVICES</h5>
 
                                     </div>
 
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 1</a>
 
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            4</button>
-
-
-
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">MODULE 2</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
                                     </div>
 
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 3</a>
 
-                                    <div class="row">
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">MODULE 4</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            5</button>
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 5</a>
 
-
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a
+                                                        href="https://ktu.edu.in/data/ELECTRONICS%20AND%20COMMUNICATION%20ENGINEERING.pdf?=ST5F3CGHdfpH9z9HHpqK8sNs41xwmedRWWDF6wyrlCStqx53T8OnWsYYmSurG8KHiPnAwf0%2FFD6ng%2BroKfN59A%3D%3D">SYLLABUS</a>
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
                                     </div>
 
 
 
-                                </div>
-                            </div>
 
-                        </div>
-                        <div class="swiper-slide" style='background-color:#111;'>
-                            <div class="row p-2 mx-auto">
-                                <div class="col-5 mx-auto">
 
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>LOGIC CIRCUIT
-                                            DESIGN</button>
-                                    </div>
 
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
-                                            SYLLABUS</button>
-                                    </div>
 
 
-                                    <div class="row mt-4">
-                                        <img class='img-responsive rounded img-fluid mx-auto'
-                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
-                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-5 mx-auto text-center">
-                                    <div class="row mt-4">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            1</button>
-
-                                    </div>
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            2</button>
-
-
-
-                                    </div>
-                                    <div class="row">
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            3</button>
-
-
-
-                                    </div>
-
-
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            4</button>
-
-
-
-                                    </div>
-
-
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            5</button>
-
-
-                                    </div>
-
-
-                                   
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="swiper-slide" style=''>
-
-                            <div class="row p-2 mx-auto">
-                                <div class="col-5 mx-auto">
-
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>NETWORK THEORY
-                                        </button>
-                                    </div>
-
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
-                                            SYLLABUS</button>
-                                    </div>
-
-
-                                    <div class="row mt-4">
-                                        <img class='img-responsive rounded img-fluid mx-auto'
-                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
-                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-5 mx-auto text-center">
-                                    <div class="row mt-4">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            1</button>
-
-                                    </div>
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            2</button>
-
-
-
-                                    </div>
-                                    <div class="row">
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            3</button>
-
-
-
-                                    </div>
-
-
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            4</button>
-
-
-
-                                    </div>
-
-
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            5</button>
-
-
-                                    </div>
-
-
-                                   
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide" style='background-color:#111;'>
-
-
-                            <div class="row p-2 mx-auto">
-                                <div class="col-5 mx-auto">
-
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>ENGINEERING MATHEMATICS
-                                        </button>
-                                    </div>
-
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
-                                            SYLLABUS</button>
-                                    </div>
-
-
-                                    <div class="row mt-4">
-                                        <img class='img-responsive rounded img-fluid mx-auto'
-                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
-                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-5 mx-auto text-center">
-                                    <div class="row mt-4">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            1</button>
-
-                                    </div>
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            2</button>
-
-
-
-                                    </div>
-                                    <div class="row">
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            3</button>
-
-
-
-                                    </div>
-
-
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            4</button>
-
-
-
-                                    </div>
-
-
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            5</button>
-
-
-                                    </div>
-
-
-
-                                  
-
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="swiper-slide" style='background-color:#111;'>
-
-                            <div class="row p-2 mx-auto">
-                                <div class="col-5 mx-auto">
-
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>PROFESSIONAL ETHICS
-                                        </button>
-                                    </div>
-
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
-                                            SYLLABUS</button>
-                                    </div>
-
-
-                                    <div class="row mt-4">
-                                        <img class='img-responsive rounded img-fluid mx-auto'
-                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
-                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-5 mx-auto text-center">
-                                    <div class="row mt-4">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            1</button>
-
-                                    </div>
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            2</button>
-
-
-
-                                    </div>
-                                    <div class="row">
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            3</button>
-
-
-
-                                    </div>
-
-
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            4</button>
-
-
-
-                                    </div>
-
-
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            5</button>
-
-
-                                    </div>
-
-
-                                 
 
 
                                 </div>
@@ -525,159 +229,376 @@
 
 
                         </div>
-                        <div class="swiper-slide" style='background-color:#111;'>
 
+
+
+                        <div class="swiper-slide ">
 
                             <div class="row p-2 mx-auto">
-                                <div class="col-5 mx-auto">
-
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>
-                                            SUSTAINABLE ENGINEERING
-                                        </button>
-                                    </div>
-
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
-                                            SYLLABUS</button>
-                                    </div>
-
-
-                                    <div class="row mt-4">
-                                        <img class='img-responsive rounded img-fluid mx-auto'
-                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
-                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-5 mx-auto text-center">
-                                    <div class="row mt-4">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            1</button>
-
-                                    </div>
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            2</button>
+                                <div class="col-12 mx-auto">
 
 
 
-                                    </div>
-                                    <div class="row">
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            3</button>
+                                    <div class="row mx-auto text-center">
 
-
+                                        <h5 class='mx-auto mb-3'>LOGIC CIRCUIT DESIGN</h5>
 
                                     </div>
 
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 1</a>
 
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            4</button>
-
-
-
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">MODULE 2</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
                                     </div>
 
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 3</a>
 
-                                    <div class="row">
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">MODULE 4</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            5</button>
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 5</a>
 
-
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">SYLLABUS</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
                                     </div>
 
 
 
-                                   
+
+
+
+
+
 
 
                                 </div>
                             </div>
 
 
+
                         </div>
-                        <div class="swiper-slide" style='background-color:#111;'>
+
+                        <div class="swiper-slide ">
 
                             <div class="row p-2 mx-auto">
-                                <div class="col-5 mx-auto">
+                                <div class="col-12 mx-auto">
 
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>
-                                            COMPUTER SCIENCE
-                                        </button>
+
+
+                                    <div class="row mx-auto text-center">
+
+                                        <h5 class='mx-auto mb-3'>NETWORK THEORY</h5>
+
                                     </div>
 
-                                    <div class="row mt-4">
-                                        <button class='mx-auto btn p-0 '
-                                            style='background:#111;color:#9D00FF;font-weight:700;'>DOWNLOAD
-                                            SYLLABUS</button>
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 1</a>
+
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">MODULE 2</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 3</a>
+
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">MODULE 4</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 5</a>
+
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">SYLLABUS</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
                                     </div>
 
 
-                                    <div class="row mt-4">
-                                        <img class='img-responsive rounded img-fluid mx-auto'
-                                            style='height:100px;width:100px; border:2px solid #9D00FF;'
-                                            src="https://usercontent1.hubstatic.com/6328700_f1024.jpg" alt="">
-                                    </div>
+
+
+
+
+
+
+
+
                                 </div>
-                                <div class="col-5 mx-auto text-center">
-                                    <div class="row mt-4">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            1</button>
-
-                                    </div>
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            2</button>
+                            </div>
 
 
 
-                                    </div>
-                                    <div class="row">
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            3</button>
+                        </div>
 
 
+                        <div class="swiper-slide ">
+
+                            <div class="row p-2 mx-auto">
+                                <div class="col-12 mx-auto">
+
+
+
+                                    <div class="row mx-auto text-center">
+
+                                        <h5 class='mx-auto mb-3'>PROFESSIONAL ETHICS</h5>
 
                                     </div>
 
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 1</a>
 
-                                    <div class="row">
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">MODULE 2</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            4</button>
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 3</a>
 
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">MODULE 4</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 5</a>
 
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">SYLLABUS</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
                                     </div>
 
 
-                                    <div class="row">
-
-                                        <button class='btn w-100 rounded mb-1'
-                                            style='background-color: #9D00FF;font-weight:700; color:white;'>MODULE
-                                            5</button>
 
 
+
+
+
+
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="swiper-slide ">
+
+                            <div class="row p-2 mx-auto">
+                                <div class="col-12 mx-auto">
+
+
+
+                                    <div class="row mx-auto text-center">
+
+                                        <h5 class='mx-auto mb-3'>SUSTAINABLE ENGINEERING</h5>
+
+                                    </div>
+
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 1</a>
+
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">MODULE 2</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 3</a>
+
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">MODULE 4</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">MODULE 5</a>
+
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">SYLLABUS</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="swiper-slide ">
+
+                            <div class="row p-2 mx-auto">
+                                <div class="col-12 mx-auto">
+
+
+
+                                    <div class="row mx-auto mt-0 mb-3 text-center">
+
+                                        <h5 class='mx-auto '>SCIENTIFIC COMPUTING LAB</h5>
+
+                                    </div>
+
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">LAB 1 & 2</a>
+
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">LAB 3 & 4</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-deck mt-sm-4">
+                                        <div class="card" data-aos="zoom-in-down">
+                                            <div class="card-body">
+                                                <h4 class="card-title"> <a href="ssdModule1.html">LAB 5 & 6</a>
+
+                                                </h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="zoom-in-up">
+                                            <div class="card-body">
+                                                <h4 class="card-title"><a href="">LAB 7 & 8</a></h4>
+                                                <p class="card-text">Text</p>
+                                            </div>
+                                        </div>
                                     </div>
 
 
@@ -688,9 +609,13 @@
                             </div>
 
 
+
                         </div>
+
 
                     </div>
+                    <div class="swiper-pagination" style=' color:white;'></div>
+
                 </div>
 
 
@@ -785,6 +710,10 @@
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
 
+    <script>
+        AOS.init();
+    </script>
+
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
@@ -797,8 +726,8 @@
             watchSlidesVisibility: true,
             slidesPerView: 1,
             pagination: {
-           el: '.swiper-pagination',
-      },
+                el: '.swiper-pagination',
+            },
 
         })
     </script>
