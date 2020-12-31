@@ -43,15 +43,54 @@
     body {
       background: black;
     }
-
     .card {
       background: black;
       color: white;
       font-weight: 500;
-      border: 2px solid #9D00FF;
       border-radius: 15px;
-     
     }
+
+    @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+html, body {
+  height: 100%;
+}
+
+.gradient-border {
+  --borderWidth: 3px;
+  background: black;
+  position: relative;
+  border-radius: 15px;
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
   </style>
 </head>
 
@@ -90,103 +129,114 @@
 
     <div class="row mt-5 pt-3">
 
-      <h5 class='mx-auto mt-5' style='color:#9D00FF; font-weight:700;'>VIDEOS SSD MODULE 1</h5>
+      <h5 class='mx-auto mt-5'  style="font-weight:700;">VIDEOS SSD MODULE 1</h5>
 
 
     </div>
 
     <hr>
-    
-    <div class="row mx-auto">
+    <div class="card-group mt-3 mx-auto">
+      <div class="card text-center" data-aos="fade-down-right">
+        <div class="card-body gradient-border">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
 
-      <div class="col-md-12">
+          <iframe width="" height="" src="https://www.youtube.com/embed/wsNzAuYDgy0" frameborder="0"
+            allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
 
-
-        <div class="card-group mt-3 ">
-          <div class="card text-center"  data-aos="fade-down-right">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Text</p>
-    
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wsNzAuYDgy0" allowfullscreen></iframe>
-              </div>
-              
-    
-            </div>
-          </div>
-          <div class="card text-center" data-aos="fade-down-left">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Text</p>
-    
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wsNzAuYDgy0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-    
-          <div class="card text-center"  data-aos="fade-down-right">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Text</p>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wsNzAuYDgy0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
         </div>
-    
-    
+      </div>
+      <div class="card text-center" data-aos="fade-down-left">
+        <div class="card-body gradient-border">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+
+
+          <iframe width="" height="" src="https://www.youtube.com/embed/wsNzAuYDgy0" frameborder="0"
+            allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="card text-center"  data-aos="fade-down-right">
+        <div class="card-body gradient-border">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+
+
+          <iframe width="" height="" src="https://www.youtube.com/embed/wsNzAuYDgy0" frameborder="0"
+            allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group mt-3 mx-a">
+      <div class="card text-center" data-aos="fade-down-left">
+        <div class="card-body gradient-border">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+
+          <iframe width="" height="" src="https://www.youtube.com/embed/wsNzAuYDgy0" frameborder="0"
+            allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+      </div>
+      <div class="card text-center"  data-aos="fade-down-right">
+        <div class="card-body gradient-border">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+
+
+          <iframe width="" height="" src="https://www.youtube.com/embed/wsNzAuYDgy0" frameborder="0"
+            allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="card text-center" data-aos="fade-down-left">
+        <div class="card-body gradient-border">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+
+
+          <iframe width="" height="" src="https://www.youtube.com/embed/wsNzAuYDgy0" frameborder="0"
+            allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
 
 
-    <div class="row mx-auto">
+    <div class="card-group mt-3 mx-auto">
+      <div class="card text-center"  data-aos="fade-down-right">
+        <div class="card-body gradient-border">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
 
-      <div class="col-md-12">
+          <iframe width="" height="" src="https://www.youtube.com/embed/wsNzAuYDgy0" frameborder="0"
+            allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
 
-
-        <div class="card-group mt-3 ">
-          <div class="card text-center"  data-aos="fade-down-right">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Text</p>
-    
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wsNzAuYDgy0" allowfullscreen></iframe>
-              </div>
-              
-    
-            </div>
-          </div>
-          <div class="card text-center" data-aos="fade-down-left">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Text</p>
-    
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wsNzAuYDgy0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-    
-          <div class="card text-center"  data-aos="fade-down-right">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Text</p>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wsNzAuYDgy0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
         </div>
-    
-    
+      </div>
+      <div class="card text-center" data-aos="fade-down-left">
+        <div class="card-body gradient-border">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+
+
+          <iframe width="" height="" src="https://www.youtube.com/embed/wsNzAuYDgy0" frameborder="0"
+            allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="card text-center" data-aos="fade-down-left">
+        <div class="card-body gradient-border">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+
+
+          <iframe width="" height="" src="https://www.youtube.com/embed/wsNzAuYDgy0" frameborder="0"
+            allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
-    
-    
 
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
