@@ -1,11 +1,11 @@
-*,
+/* *,
 *:after,
 *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-}
+} */
 /* body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -36,8 +36,9 @@
   /* font-size: 24px; */
   position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  
+  /* align-items: center; */
+  /* justify-content: space-around; */
 
 }
 #scroll_section {
@@ -51,7 +52,9 @@
   
 }
 .section.cl2 {
-  background-color: #111;
+  background-color: #fff;
+  display:block;
+
 }
 .section.cl3 {
   background-color: #111;
@@ -62,9 +65,7 @@
 .section.cl5 {
   background-color: #111;
 }
-.section.cl6 {
-  background-color: #fff;
-}
+
 .portfolio-box {
   border: 2px solid;
   display: flex;
