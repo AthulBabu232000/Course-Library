@@ -1,2 +1,2 @@
 # Course-Library
-digital library
+Digital library
